@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>КОРЗИНА</title>
+    <link rel="shortcut icon" href="https://avante.pro/upload/iblock/e26/reftp.png" type="image/x-icon">
+    <meta name="description" content="Описание страницы" />
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+ <div id="menu">
+   <a href="main.html"><img id="main" alt="Рефтинская птицефабрика" src="images/logo.png"></a>
+    <div id="none">
+        </div>
+   <div id="about">
+   <a href= "company.html"> О КОМПАНИИ </a>
+    </div>
+    <div id="about2">
+   <a href= "product.html"> ПРОДУКЦИЯ</a>
+    </div>
+    <div id="about3">
+   <a href= "feedback.html"> ОБРАТНАЯ СВЯЗЬ </a>
+    </div>
+    <div id="about4">
+   <a href= "basket.html"> КОРЗИНА </a>
+    </div>
+ </div>
+ <p id="text11">Корзина</p>
+
+<div id="content-slider">
+  <div class="wrap-slider"> 
+  </div>
+</div>
+<div class="basket">
+<div class="smalcart">
+<strong>Товаров в корзине:</strong><?=$smal_cart['cart_count']?> шт.
+<br/><a href=''>Оформить заказ</a>
+</div>
+<a href="/catalog?in-cart-product-id=<?=$item['id']?>">В корзину</a>
+</div>
+ </body>
+</html>
